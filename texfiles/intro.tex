@@ -1,0 +1,18 @@
+\section{Introduction}
+
+The goal of \texttt{par} is to read a number of FASTA-sequences and to return their multiple alignment in MAF-Format\footnote{\url{http://genome.ucsc.edu/FAQ/FAQformat\#format5}}.
+The approach for calculating the alignment is based on the program phylonium \citep{phylonium}. 
+
+In \textit{andi} \citep{andi} and its faster successor \textit{phylonium} \citep{phylonium} the authors presented the idea of \textit{anchor distances} to estimate evolutionary distances. 
+Anchor distances are based on micro-alignments of regions that are anchored by exact matches. 
+Both approaches proved to be orders of magnitudes faster than classical alignment tools while still being accurate on closely related genomes.
+Even among similar alignment-free methods they were found to be among the fastest. 
+However, the actual sequence alignments that are used to generate the distance matrices stay implicit and cannot be accessed. 
+The goal of this thesis is to make the alignments accessible and to provide them in a way that makes them comparable to classical alignment tools. 
+
+The section \ref{sec:implementation} explains the main implementation of the program.
+In section \ref{sec:seqUtil} the [[seqUtil]] package is explained and implemented in more detail although some parts will already be shown before.
+This package contains some helpers that are in some sense related to sequences.
+
+For andi \citep{andi} and phylonium \citep{phylonium} anchor alignments are build to estimate the distance between genomes.
+For [[par]] we take these anchor alignments and show the actual underlying explicit multiple sequence alignment (MSA).

@@ -1,0 +1,26 @@
+\documentclass[a4paper]{article}
+\usepackage{graphics,color,eurosym,latexsym}
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{pst-all}
+\usepackage{noweb}
+\usepackage{amsmath}
+\usepackage{natbib}
+%\bibliographystyle{plain}
+\usepackage[hidelinks]{hyperref} %Verlinkungen ohne roten Rand
+\usepackage{inconsolata}
+
+
+% \pagestyle{noweb} % remove to omit headers containing .nw filename
+% \noweboptions{longchunks,smallcode}
+
+% \let\nowebsize=\small
+
+\newcommand{\todoblock}[1]{
+    \par\noindent\rule{\textwidth}{1pt}
+    TODO: #1
+    \par\noindent\rule{\textwidth}{1pt}
+}
+
+\setlength\parindent{0pt}

@@ -1,0 +1,4 @@
+github.com/evolbioinf/esa v0.0.0-20220119170951-53a316f07a9b h1:Dg6P2c7dwVuu2P9jKzRmb0LGTqPvxZLdpgrkQFEXn54=
+github.com/evolbioinf/esa v0.0.0-20220119170951-53a316f07a9b/go.mod h1:3JO3FxGmnJ11JQBeeLoL61XBsZ76s9jod10IyKrxjHs=
+github.com/evolbioinf/fasta v0.0.0-20220329100526-fa625fa59b5d h1:13pT8++1YrSDWT1cD1R+L/N7ulgjkKrnhBgXMUYyKYk=
+github.com/evolbioinf/fasta v0.0.0-20220329100526-fa625fa59b5d/go.mod h1:1bD5OMlu85gdxSDr74kxUElPjLc/EVTzkRw2UT+FMhg=

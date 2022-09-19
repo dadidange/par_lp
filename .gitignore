@@ -1,0 +1,12 @@
+**/texfiles/*
+!texfiles/main.pdf
+!texfiles/main.bib
+!texfiles/main.tex
+!texfiles/header.tex
+!texfiles/intro.tex
+!texfiles/pardoc.pdf
+
+*.maf
+*.html
+par
+!/src/par
