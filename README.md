@@ -4,9 +4,9 @@ This repository contains the code for my masters project *par* in its initial fo
 For a more recent version I split this in two. 
 The library for indexing the input and for matching can be found at [github.com/dadidange/esaMatcher](github.com/dadidange/esaMatcher). 
 Currently, I am working on some adaptions at the code to compute the alignments.
-At some point, this will be published [here](github.com/dadidange/par) at some point. 
+At some point, this will be published at github.com/dadidange/par. 
 
-Right now, this repository should work best. 
+Right now, this repository here should work best. 
 
 ## How to run
 ### noweb
@@ -22,7 +22,7 @@ For this to work, some dependencies need to be installed:
     `$ sudo apt install libdivsufsort-dev`
 
 The working directory should now contain the executable *par* and the corresponding code in src.
-The directory [./textfiles](./textfiles) contains the document `pardoc.pdf` for documentation.
+The directory [./texfiles](./texfiles) contains the document `pardoc.pdf` for documentation.
 The documentation is rather a monologue that needs to be reworked. 
 
 ### just the code
