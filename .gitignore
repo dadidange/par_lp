@@ -5,6 +5,7 @@
 !texfiles/header.tex
 !texfiles/intro.tex
 !texfiles/pardoc.pdf
+!texfiles/Makefile
 
 *.maf
 *.html
