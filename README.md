@@ -38,6 +38,8 @@ To just compile the code, type `go build` in the `src/par` directory.
 Results in a multiple alignment in [MAF-format](https://genome.ucsc.edu/FAQ/FAQformat.html#format5).
 
 [mview](https://desmid.github.io/mview/) is a great tool to display alignments a little better than plain text. 
+Mview is available here: https://github.com/desmid/mview/ and could be executed like this:
+
 ```
 mview -in maf -html head -css on -coloring mismatch covid.maf > covid.html
 ```
