@@ -15,7 +15,7 @@ import (
   "math"
 )
 
-const version = "0.11"
+const version = "0.2-LP-Fin"
 
 func main(){
   var optR = flag.String("r", "", "reference sequence.\n\t"+

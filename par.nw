@@ -9,7 +9,7 @@ import (
   <<Main Imports>>
 )
 
-const version = "0.11"
+const version = "0.2-LP-Fin"
 
 <<Main>>
 <<Main Helpers>>
