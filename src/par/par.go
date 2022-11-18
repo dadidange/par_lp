@@ -15,7 +15,7 @@ import (
   "math"
 )
 
-const version = "0.2-LP-Fin"
+const version = "0.21-LP-Fin"
 
 func main(){
   var optR = flag.String("r", "", "reference sequence.\n\t"+
@@ -375,6 +375,7 @@ func GetMafLine(h seqUtil.Homology, start, end int, seq fasta.Sequence) string{
       s := seq.Data()[startQ: end]
       seqStr = seqUtil.RevCompDna(s)
       strand = "-"
+      startQ = srcSize - end + 1
     }
 
   if h.IsFwd(){
