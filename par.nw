@@ -9,7 +9,7 @@ import (
   <<Main Imports>>
 )
 
-const version = "0.21-LP-Fin"
+const version = "0.21.5-LP-Fin"
 
 <<Main>>
 <<Main Helpers>>
@@ -1254,9 +1254,10 @@ handleRev := func ()  {
   }
 @
 We also have to update the starting index to comply with the MAF specification.  
-To do so, the starting index has to match the inverted sequence. Since the sequence segment is inverted we have to start counting from the back to find the starting position. 
+To do so, the starting index has to match the inverted sequence. 
+Since the sequence segment is inverted we have to start counting from the back to find the starting position. 
 <<Update Start Index>>=
-startQ = srcSize - end + 1
+startQ = srcSize - end
 @
 Finally we check the homology direction to decide which strand direction we are dealing with.
 We append the gap, which is empty for $overlap < 0$ to the sequence and return the corretly formatted line.
