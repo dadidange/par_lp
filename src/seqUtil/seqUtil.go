@@ -177,9 +177,13 @@ func RevCompDna(seq []byte) []byte{
         revSeq := make([]byte, n)
 
         //Reverse
-        for i, j := 0, n-1; i < j; i, j = i+1, j-1 {
-                                        revSeq[i], revSeq[j] = seq[j], seq[i]
-        }
+        //for i, j := 0, n-1; i < j; i, j = i+1, j-1 {
+    //revSeq[i], revSeq[j] = seq[j], seq[i]
+        //}
+  //slower but more secure
+  for i:= 0; i<n; i++ {
+    revSeq[(n-i)-1] = seq[i]
+  }
 
         //Complement
         f := func (r rune) rune  {
@@ -193,7 +197,7 @@ func RevCompDna(seq []byte) []byte{
           case r == 'C':
                 return 'G'
           default:
-                return '-'
+                return 'N'
           }
         }
         return  bytes.Map(f, revSeq)
