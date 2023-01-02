@@ -2,6 +2,8 @@ module github.com/dadidange/par_lp/src/par
 
 replace github.com/dadidange/par_lp/src/esaMatcher => ../esaMatcher
 
+replace github.com/dadidange/par_lp/src/seqUtil => ../seqUtil
+
 go 1.18
 
 require (
