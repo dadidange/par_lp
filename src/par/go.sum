@@ -1,3 +1,5 @@
+github.com/dadidange/par_lp/src/seqUtil v0.0.0-20221130163224-c1340b459c0e h1:H11D6uXPrZ7BpztBgF0QOdP7eyfABqFWWs/WK9ICHeM=
+github.com/dadidange/par_lp/src/seqUtil v0.0.0-20221130163224-c1340b459c0e/go.mod h1:D+/XFhYPRKypIcbcfJ+X9bz3RP49LXc7LeTZDlzx2ec=
 github.com/evolbioinf/esa v0.0.0-20220119170951-53a316f07a9b h1:Dg6P2c7dwVuu2P9jKzRmb0LGTqPvxZLdpgrkQFEXn54=
 github.com/evolbioinf/esa v0.0.0-20220119170951-53a316f07a9b/go.mod h1:3JO3FxGmnJ11JQBeeLoL61XBsZ76s9jod10IyKrxjHs=
 github.com/evolbioinf/fasta v0.0.0-20220329100526-fa625fa59b5d h1:13pT8++1YrSDWT1cD1R+L/N7ulgjkKrnhBgXMUYyKYk=

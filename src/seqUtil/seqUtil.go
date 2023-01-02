@@ -68,7 +68,7 @@ func (h *Homology) ReverseRefCoords(refLen int){
 
 func FilterOverlaps(homs []Homology) []Homology{
   m := len(homs)
-  if m == 1 {
+  if m <= 1 {
     // nothing to filter
     return homs
   }
