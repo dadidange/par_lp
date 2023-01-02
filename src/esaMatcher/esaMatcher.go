@@ -2,7 +2,7 @@ package esaMatcher
 
 import(
   "github.com/evolbioinf/esa"
-  "github.com/dadidange/par/src/seqUtil"
+  "github.com/dadidange/par_lp/src/seqUtil"
 )
 
 type MyEsa struct {
