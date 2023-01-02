@@ -398,7 +398,7 @@ return MyEsa{s, sa, lcp, cld, strandSize}
 @
 We start building the ESA in our main function by calling \texttt{BuildEsa} and importing the \texttt{myesa} package
 <<Main Imports>>=
-"github.com/dadidange/par/src/esaMatcher"
+"github.com/dadidange/par_lp/src/esaMatcher"
 @
 <<Build ESA>>=
 //Construct the ESA
@@ -649,7 +649,7 @@ func (e *MyEsa) FindAnchors(query []byte,
   return homs
 }
 <<ESA Imports>>=
-"github.com/dadidange/par/src/seqUtil"
+"github.com/dadidange/par_lp/src/seqUtil"
 @
 The return type of [[Find Anchors]] is a slice of the type [[Homology]] that is implemented in the [[seqUtil]] package.
 It contains the starting position on both sequences, its length and its strand direction.
@@ -798,7 +798,7 @@ The [[FilterOverlaps]] function belongs to [[seqUtil]] as well.
 <<Filter Overlaps>>=
 func FilterOverlaps(homs []Homology) []Homology{
   m := len(homs)
-  if m == 1 {
+  if m <= 1 {
     // nothing to filter
     return homs
   }
@@ -942,7 +942,7 @@ The function [[runtime.NumCPU()]] returns the number of CPUs that are usable by 
 Using [[runtime.GOMAXPROCS()]] we can set the number of simultaneous executing CPUs.
 
 <<Main Imports>>=
-"github.com/dadidange/par/src/seqUtil"
+"github.com/dadidange/par_lp/src/seqUtil"
 "runtime"
 @
 
